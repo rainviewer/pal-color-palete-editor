@@ -240,7 +240,7 @@ Color: 70 255 255 255  \n\
                 if (match) {
                     let [, type, valuesStr] = match;
                     let values = valuesStr.trim().split(/\s+/).map(Number);
-                    let dbz = values.shift();
+                    let dbz = parseInt(values.shift(), 10);
                     let r = values.shift();
                     let g = values.shift();
                     let b = values.shift();
